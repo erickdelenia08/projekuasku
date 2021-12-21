@@ -351,3 +351,4 @@ ketentuan yang berbeda.
 [repo-gh]: https://github.com/laymonage/django-template-heroku
 [repo-gl]: https://gitlab.com/laymonage/django-template-heroku
 [license]: LICENSE
+# projekuasku
