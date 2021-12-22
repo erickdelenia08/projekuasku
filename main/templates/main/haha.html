@@ -1,10 +1,269 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NJIRRRRRRRRR</title>
-</head>
-<body>
-<h1>YPOIIIIIIIIIIIIIIIIIIIIIIIII</h1>
-</body>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>NJIRRRRRRRRR</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>YPOIIIIIIIIIIIIIIIIIIIIIIIII</h1>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<html>
+    <head>
+    <title>Calculator</title>
+        <style>
+            input{
+                height: 50px;
+                width: 100%;
+                border-color: darkblue;
+                color: gray;
+                border-radius: 5px;
+                align-content: center;
+                display:block;
+                font-size: 16px;
+            }
+
+            .box{
+                 height: 50px;
+                width: 100%;
+                border-color: darkblue;
+                color: gray;
+                border-radius: 5px;
+                align-content: center;
+                  font-size: 16px;
+                padding: 5 5 5 5 ;
+            }
+
+            button{
+                height: 50px;
+                width: 60px;
+                border-color: darkblue;
+                color: gray;
+                border-radius: 5px;
+                align-content: center;
+                display:block;
+                  font-size: 16px;
+            }
+
+
+
+
+        </style>
+       <script>
+            var initial ;
+
+        function setOne(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "1";
+            document.getElementById("screen").value  = initial;
+            return false;
+        }
+
+        function setTwo(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "2";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+
+        function setThree(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "3";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setFour(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "4";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setFive(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "5";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setSix(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "6";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setSeven(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "7";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setEight(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "8";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setNine(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "9";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+            function setZero(){
+            initial =  document.getElementById("screen").value ;
+            initial = initial + "0";
+        document.getElementById("screen").value = initial;
+             return false;
+        }
+           function clearScreen(){
+               document.getElementById("screen").value="";
+               return false;
+           }
+
+           function addup(){
+            initial =  document.getElementById("screen").value ;
+
+            if (initial == ""){
+                     document.getElementById("plus").innerHTML = "<h4>Please input the correct data </h4>";
+            }
+            else{
+                  initial = initial + "+";
+                   document.getElementById("screen").value = initial;
+                 document.getElementById("plus").innerHTML = "";
+               }
+             return false;
+           }
+
+               function sub(){
+            initial =  document.getElementById("screen").value ;
+            if (initial == ""){
+                     document.getElementById("minus").innerHTML = "<h4>Please input the correct data </h4>";
+            }
+            else{
+                  initial = initial + "-";
+                   document.getElementById("screen").value = initial;
+                 document.getElementById("minus").innerHTML = "";
+               }
+             return false;
+           }
+
+             function times(){
+           initial =  document.getElementById("screen").value ;
+
+            if (initial == ""){
+                     document.getElementById("mult").innerHTML = "<h4>Please input the correct data </h4>";
+            }
+            else{
+                  initial = initial + "*";
+                   document.getElementById("screen").value = initial;
+                 document.getElementById("mult").innerHTML = "";
+               }
+             return false;
+           }
+
+             function division(){
+            initial =  document.getElementById("screen").value ;
+
+            if (initial == ""){
+                     document.getElementById("divi").innerHTML = "<h4>Please input the correct data </h4>";
+            }
+            else{
+                  initial = initial + "/";
+                   document.getElementById("screen").value = initial;
+                 document.getElementById("divi").innerHTML = "";
+               }
+             return false;
+           }
+
+             function roots(){
+            initial =  document.getElementById("screen").value ;
+        document.getElementById("screen").value = Math.sqrt(initial);
+             return false;
+           }
+
+           function sine(){
+            initial =  document.getElementById("screen").value ;
+        document.getElementById("screen").value = Math.sin(initial);
+             return false;
+           }
+
+           function cosine(){
+            initial =  document.getElementById("screen").value ;
+        document.getElementById("screen").value = Math.cos(initial);
+             return false;
+           }
+
+           function tang(){
+            initial =  document.getElementById("screen").value ;
+        document.getElementById("screen").value = Math.tan(initial);
+             return false;
+           }
+           function answer(){
+            initial =  document.getElementById("screen").value ;
+            document.getElementById("screen").value = eval(initial);
+            document.getElementById("title").innerHTML = "<h2>Terimakasih </h2>";
+               return false;
+           }
+
+           function backSpace(){
+               initial = document.getElementById("screen").value ;
+               var str= initial;
+               var res= str.substring(0, str.length-1);
+            document.getElementById("screen").value = res;
+
+               return false;
+           }
+
+
+
+        </script>
+    </head>
+    <body>
+<table color="blue" border="1" >
+    <font color="blue" size="+3" face="Times New Roman">
+        <div id="title"><h2>Kalkulator oleh Erick Delenia-191079</h2> </div>
+        </font>
+    <font color="red" size="+3" face="Times New Roman">
+        <div id="plus"></div>
+        <div id="minus"></div>
+        <div id="mult"></div>
+        <div id="divi"></div>
+        </font>
+
+
+   <table border="1" width="20%"  cellpadding="10">
+<tr>
+<tr>
+<td colspan="3"><input id="screen" type="text" class="box" name="Calculator" size="60" value="" /></td>
+</tr>
+<tr>
+<td width=10%><input class="ten" name="1" value="1" size="15" type="button" onclick="return setOne();"></td><td width=10%><input class="ten" name="2" value="2" size="15" type="button" onclick="return setTwo();"></td><td width=10%><input class="ten" name="3" value="3" size="15" type="button" onclick="return setThree();"></td>
+</tr>
+<tr>
+<td width=10%><input name="1" class="ten" value="4" size="25" type="button" onclick="return setFour();"></td><td width=10%><input name="2" class="ten" value="5" size="25" type="button" onclick="return setFive();"></td><td width=10%><input name="3" value="6" class="ten" size="25" type="button" onclick="return setSix();"></td>
+</tr>
+<tr>
+<td width=10%><input name="1" value="7" size="25" class="ten" type="button" onclick="return setSeven();"></td><td width=10%><input name="2" value="8" size="25" class="ten" type="button" onclick="return setEight();"></td><td width=10%><input name="3" value="9" size="25" class="ten" type="button" onclick="return setNine();"></td>
+</tr>
+<tr>
+    <td width=10%><button id="plus" name="+" onclick="addup();">+</button></td><td width=10%><button name="0" onclick="return setZero();">0</button><td width=10%><button id="minus" class="input" name="-" onclick="sub();">-</button>
+</tr>
+<tr>
+    <td width=10%><button id="mult" name="*" onclick="times();">*</button></td><td width=10%><button name="CLEAR" onclick="return clearScreen();">CLEAR</button><td width=10%><button id="divi" class="input" name="/" onclick="division();">/</button>
+</tr>
+
+    <tr>
+        <td width=10%><button name="sqrt" onclick="roots();">SQRT</button></td><td width=10%><button name="answer" onclick="return answer();">=</button><td width=10%><button name="Backspace" onclick="backSpace();">Back</button></td>
+</tr>
+    <tr>
+       <td width=10%><button name="SINE" onclick="sine();">SIN</button></td><td width=10%><button name="COSINE" onclick="cosine();">COS</button></td><td width=10%><button name="TAN" onclick="tang();">TAN</button></td>
+    </tr>
+
+
+
+</table>
+
+        </table>
+    </body>
 </html>
